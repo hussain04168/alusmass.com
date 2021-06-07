@@ -1,1 +1,69 @@
+/************
+**Resets  
+**************/
 
+*::before,
+*::after,
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+/*****************
+**Variables  
+******************/
+:root {
+  --mainFontSize: 1.15rem;
+  --mainFontColor: hsl(0, 0%, 15%);
+  --navHoverColor: hsl(0, 0%, 40%);
+}
+
+/****************
+ **Body
+*****************/
+body {
+  font-family: "Montserrat", sans-serif;
+  font-family: "Space Mono", monospace;
+  color: var(--mainFontColor);
+}
+
+/***************
+**Navigation  
+****************/
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ebaab0;
+  padding: 1em 0;
+}
+.nav-list {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  /* background-color: antiquewhite; */
+  width: 50%;
+}
+
+.nav-list a {
+  color: var(--mainFontColor);
+  font-size: var(--mainFontSize);
+}
+
+.nav-list li:hover {
+  border-bottom: 2px solid maroon;
+}
+
+.nav-list li:nth-child(5):hover {
+  border: none;
+}
+
+.nav-list li a .material-icons:hover {
+  color: var(--navHoverColor);
+}
+
+/**********  */
