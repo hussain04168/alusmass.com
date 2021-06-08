@@ -19,8 +19,13 @@ a {
 ******************/
 :root {
   --mainFontSize: 1.15rem;
-  --mainFontColor: hsl(0, 0%, 15%);
+  --mainFontColor: rgb(39, 80, 112);
   --navHoverColor: hsl(0, 0%, 40%);
+  --primaryColor: #ebaab0;
+  --secondaryColor: maroon;
+  --overlayColor: rgb(39, 80, 112);
+  --paragraphLineHeight: 2em;
+  --paragraphLetterSpacing: 0.0625em;
 }
 
 /****************
@@ -38,14 +43,13 @@ body {
 .navigation {
   display: flex;
   justify-content: space-between;
-  background-color: #ebaab0;
+  background-color: var(--primaryColor);
   padding: 1em 0;
 }
 .nav-list {
   display: flex;
   justify-content: space-around;
   list-style: none;
-  /* background-color: antiquewhite; */
   width: 50%;
 }
 
@@ -55,7 +59,7 @@ body {
 }
 
 .nav-list li:hover {
-  border-bottom: 2px solid maroon;
+  border-bottom: 3px solid var(--secondaryColor);
 }
 
 .nav-list li:nth-child(5):hover {
@@ -63,7 +67,85 @@ body {
 }
 
 .nav-list li a .material-icons:hover {
-  color: var(--navHoverColor);
+  color: var(--secondaryColor);
 }
 
-/**********  */
+/***********
+ **Hero  
+************/
+.hero {
+  background: url(hero2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: calc(100vh - 3rem);
+  position: relative;
+}
+
+.hero-intro {
+  position: relative;
+  color: #f3e1c0;
+  font-size: 1.75rem;
+  width: max-content;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.overlay {
+  background: linear-gradient(
+    95deg,
+    rgba(39, 80, 112, 0.55),
+    rgba(39, 80, 112, 0.9)
+  );
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.explore-btn {
+  width: max-content;
+  padding: 0.5em 1em;
+  background: none;
+  font-size: 1.75rem;
+  cursor: pointer;
+  outline: none;
+  border: 4px solid #f3e1c0;
+  border-radius: 5px;
+  color: #f3e1c0;
+  transition: all 0.3s ease-in-out;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.explore-btn:hover {
+  background-color: #f3e1c0;
+  color: #275070;
+}
+
+/*******************
+**About   
+*********************/
+
+.about-container {
+  /* background-color: turquoise; */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 9rem;
+}
+
+.about-container p {
+  font-size: var(--mainFontSize);
+  letter-spacing: var(--paragraphLetterSpacing);
+  line-height: var(--paragraphLineHeight);
+}
+
+.about-title {
+  border-bottom: 5px solid var(--secondaryColor);
+}
