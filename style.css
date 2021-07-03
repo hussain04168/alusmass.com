@@ -57,7 +57,7 @@ body {
 }
 
 main {
-  padding: 1rem 5rem;
+  padding: 4rem 5rem;
 }
 /**************
 **Body end  
@@ -339,117 +339,95 @@ li .dark-mode:hover {
 ************************/
 
 .hobbies-container {
-  /* padding: 2rem 0; */
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(auto-fill, auto);
-  grid-template-areas:
-    "title title"
-    "hobbyName1 hobbyImage1"
-    ". hobbyDescription1"
-    "hobbyImage2 hobbyName2"
-    "hobbyDescription2 ."
-    "hobbyName3 hobbyImage3"
-    ". hobbyDescription3"
-    "hobbyImage4 hobbyName4"
-    "hobbyDescription4 .";
+  padding: 4rem 1rem;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.8);
+  border-radius: var(--sectionBorderRadius);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  /* min-height: 100vh; */
+.hobby-btn {
+  width: max-content;
+  font-size: var(--btnFontSize);
+  padding: var(--btnPadding);
+  border-radius: var(--btnBorderRadius);
+  outline: none;
+  cursor: pointer;
+  align-self: flex-end;
+  background: none;
+  border: 3px solid var(--secondaryColor);
+  color: var(--secondaryColor);
+  transition: var(--btnTransition);
+}
+
+.hobby-btn:hover {
+  background-color: var(--secondaryColor);
+  color: var(--backupColor);
 }
 
 .hobbies-container .section-title {
-  /* text-align: center; */
-  /* margin: 0 auto; */
-  grid-area: title;
-  grid-column: 1 / span 2;
-  place-self: center;
+  width: max-content;
 }
 
-/** Hobby 1  */
+/** Hobby containers general  */
 
-.hobby1-title {
-  grid-area: hobbyName1;
-  /* background-color: burlywood; */
-  justify-self: end;
+.hobby1-container,
+.hobby2-container,
+.hobby3-container,
+.hobby4-container {
+  display: flex;
+  justify-content: space-around;
+  /* background-color: salmon; */
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+  padding: 0.7em 0.85em;
+  border-radius: var(--sectionBorderRadius);
+  margin-bottom: 1rem;
+  height: max-content;
 }
 
-.hobby1ImgDiv {
-  grid-area: hobbyImage1;
-  width: 50vw;
+.hobby1-NAP-container,
+.hobby2-NAP-container,
+.hobby3-NAP-container,
+.hobby4-NAP-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* background-color: sandybrown; */
+  width: 25%;
+  /* margin-right: 15rem; */
 }
 
-.hobby1Img {
-  width: 100%;
-  height: 400px;
+.hobby1-PAB-container,
+.hobby2-PAB-container,
+.hobby3-PAB-container,
+.hobby4-PAB-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* background-color: rosybrown; */
+  width: 65%;
 }
 
-.hobby1-description {
-  grid-area: hobbyDescription1;
-  /* background-color: chartreuse; */
-}
-
-/** Hobby 2  */
-
-.hobby2-title {
-  grid-area: hobbyName2;
-  /* background-color: cadetblue; */
-}
-.hobby2ImgDiv {
-  grid-area: hobbyImage2;
-  width: 50vw;
-}
-
-.hobby2Img {
-  width: 100%;
-  height: 400px;
-}
-
-.hobby2-description {
-  grid-area: hobbyDescription2;
-  /* background-color: chocolate; */
-}
-
-/** Hobby 3 */
-
-.hobby3-title {
-  grid-area: hobbyName3;
-  /* background-color: burlywood; */
-  justify-self: end;
-}
-.hobby3ImgDiv {
-  grid-area: hobbyImage3;
-  width: 50vw;
-}
-
-.hobby3Img {
-  width: 100%;
-  height: 400px;
-}
-.hobby3-description {
-  grid-area: hobbyDescription3;
-  /* background-color: chartreuse; */
-}
-
-/** Hobby 4  */
-
-.hobby4-title {
-  grid-area: hobbyName4;
-  /* background-color: burlywood; */
-}
+.hobby1ImgDiv,
+.hobby2ImgDiv,
+.hobby3ImgDiv,
 .hobby4ImgDiv {
-  grid-area: hobbyImage4;
-  width: 50vw;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 50%;
+  /* background-color: seashell; */
 }
 
+.hobby1Img,
+.hobby2Img,
+.hobby3Img,
 .hobby4Img {
   width: 100%;
-  height: 400px;
+  height: 100%;
 }
 
-.hobby4-description {
-  grid-area: hobbyDescription4;
-  /* background-color: chartreuse; */
-}
 /****************
 ** Hobbies end  
 *****************/
