@@ -25,15 +25,15 @@
     />
   </head>
   <body>
-    <!----------------  
-      Navigation
-    ----------------->
+    <!-------------------  
+      Navigation start
+    --------------------->
     <nav class="navigation">
       <img src="logo2.png" alt="picture of logo" class="logo" />
       <ul class="nav-list">
         <li><a href="#about">About</a></li>
         <li><a href="#project">Project</a></li>
-        <li><a href="#">Hobbies</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
         <li><a href="#">Contact</a></li>
         <li>
           <a href="#" class="dark-mode" title="Toggle dark mode"
@@ -42,26 +42,34 @@
         </li>
       </ul>
     </nav>
+    <!-----------------
+      Navigation end  
+     ------------------->
+
     <!-------------
-       Hero
+       Hero start
       --------------->
     <div class="hero">
-      <div class="overlay">
+      <div class="overlay" title='Photo by Olena Sergienko from Unsplash'
+        ">
         <span class="hero-intro"
           >Hello, I'm Alusine Massaquoi welcome to my website!</span
         >
         <a href="#about" class="explore-btn">Explore</a>
       </div>
     </div>
+    <!--------------
+      Hero end  
+    ---------------->
 
-    <!-------------------
-      Main container 
-      ------------------->
+    <!----------------------
+       Main container start
+      ---------------------->
 
     <main class="main-container">
-      <!------------- 
-      About me
-     ------------->
+      <!--------------- 
+      About me start
+     ------------------>
       <div class="about-container" id="about">
         <h1 class="section-title">About me</h1>
         <p>
@@ -88,24 +96,26 @@
           aspernatur, tempora eveniet non provident inventore laborum? Accusamus
           doloribus, vel repellendus unde tenetur necessitatibus ex.
         </p>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora rem
-          corrupti unde veritatis repellat totam perspiciatis harum aliquam!
-          Voluptatem aliquid eum, reiciendis sint repellat commodi ipsum
-          eligendi architecto illo necessitatibus quibusdam tempore totam
-          inventore! Commodi vitae eius consectetur dolor? Praesentium tenetur,
-          porro sit ab asperiores temporibus facere aliquam eum error ducimus
-          cum, consequatur ipsum nihil quam quis repudiandae, nisi veniam?
-        </p>
       </div>
-      <hr />
-      <!----------
-      Projects
-    ------------>
-      <div class="projects-container" id="project">
+      <!---------------
+        About me end  
+      ---------------->
+  
+      <!------------------
+      Projects start
+    ----------------------->
+    
+      <div class="projects-section-container" id="project">
         <h1 class="section-title">Projects</h1>
+        <!-- Previous button start-->
+        <button class="previous-btn carousel-btn"><</button>
+          <!-- Previous button end -->
 
-        <div class="project project-1">
+        <!-- Project Carousel start-->
+        <div class="project-carousel">
+
+        <!-- Project 1 start-->
+        <div class="project-carousel-item project-1">
           <h2 class="project-name">Piggy game</h2>
 
           <div class="project-image-container">
@@ -123,13 +133,14 @@
                 repudiandae omnis iste ipsam. Et aspernatur assumenda aut eum
                 quae omnis expedita sint odit incidunt, esse exercitationem.
               </p>
+              <a href="#" class="visit-btn">Visit</a>
             </div>
           </div>
-
-          <a href="#" class="visit-btn">Visit</a>
         </div>
+        <!-- Project 1 end -->
 
-        <div class="project project-2">
+        <!-- Project 2 start-->
+        <div class="project-carousel-item project-2">
           <h2 class="project-name">Todo list</h2>
 
           <div class="project-image-container">
@@ -147,13 +158,14 @@
                 repudiandae omnis iste ipsam. Et aspernatur assumenda aut eum
                 quae omnis expedita sint odit incidunt, esse exercitationem.
               </p>
+              <a href="#" class="visit-btn">Visit</a>
             </div>
           </div>
-
-          <a href="#" class="visit-btn">Visit</a>
         </div>
+        <!-- Project 2 end -->
 
-        <div class="project project-3">
+        <!-- Project 3 start-->
+        <div class="project-carousel-item project-3">
           <h2 class="project-name">Image carousel</h2>
 
           <div class="project-image-container">
@@ -171,13 +183,14 @@
                 repudiandae omnis iste ipsam. Et aspernatur assumenda aut eum
                 quae omnis expedita sint odit incidunt, esse exercitationem.
               </p>
+              <a href="#" class="visit-btn">Visit</a>
             </div>
           </div>
-
-          <a href="#" class="visit-btn">Visit</a>
         </div>
+        <!-- Project 3 end -->
 
-        <div class="project project-4">
+        <!-- Project 4 start-->
+        <div class="project-carousel-item project-4">
           <h2 class="project-name">Quiz</h2>
           <div class="project-image-container">
             <img
@@ -194,13 +207,67 @@
                 repudiandae omnis iste ipsam. Et aspernatur assumenda aut eum
                 quae omnis expedita sint odit incidunt, esse exercitationem.
               </p>
+              <a href="#" class="visit-btn">Visit</a>
             </div>
           </div>
-
-          <a href="#" class="visit-btn">Visit</a>
         </div>
+        <!-- Project 4 end -->
+
       </div>
-      <hr />
-    </main>
+      <!-- Project carousel end -->
+
+        <!-- Next button start -->
+       <button class="next-btn carousel-btn">></button>
+          <!-- Next button end -->
+      </div>
+      <!--------------
+        Projects end  
+      ---------------->
+
+      <!-------------------
+         Hobbies start 
+       -------------------->
+      <div class="hobbies-container" id="hobbies">
+        <h1 class="section-title">Hobbies</h1>
+
+       <!-- Hobby 1 start-->
+         <h2 class="hobby1-title">Perfume</h2>
+         <div class="hobby1ImgDiv"><img src="hobby1Img.jpg" alt="Image of a perfume bottle" class="hobby1Img"></div>
+         <div class="hobby1-description"><button class="more-btn h1-btn">More</button>
+          <p class="hobby1-description-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab maxime nemo ullam consequuntur cumque numquam quod architecto beatae saepe? Ipsa obcaecati architecto beatae corrupti totam! Atque nobis exercitationem omnis et sit quis unde vitae? Distinctio commodi magnam, assumenda reiciendis eaque, sed error totam nam nemo quo, ipsam earum excepturi nihil obcaecati quas amet? Saepe odit dolores id quia asperiores adipisci laudantium porro rem inventore voluptatem voluptates pariatur iste aut incidunt debitis reprehenderit, totam perspiciatis ratione qui facilis repudiandae earum? Dolorum.</p>
+        </div>
+        <!-- Hobby 1 end -->
+      
+       <!-- Hobby 2 start -->
+        <h2 class="hobby2-title">Football</h2>
+        <div class="hobby2ImgDiv"><img src="hobby2Img.jpg" alt="Image of a football on a pitch" class="hobby2Img"></div>
+        <div class="hobby2-description"><button class="more-btn h2-btn">More</button>
+          <p class="hobby2-description-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab maxime nemo ullam consequuntur cumque numquam quod architecto beatae saepe? Ipsa obcaecati architecto beatae corrupti totam! Atque nobis exercitationem omnis et sit quis unde vitae? Distinctio commodi magnam, assumenda reiciendis eaque, sed error totam nam nemo quo, ipsam earum excepturi nihil obcaecati quas amet? Saepe odit dolores id quia asperiores adipisci laudantium porro rem inventore voluptatem voluptates pariatur iste aut incidunt debitis reprehenderit, totam perspiciatis ratione qui facilis repudiandae earum? Dolorum.</p>
+        </div>
+        <!-- Hobby 2 end -->
+
+        <!-- Hobby 3 start -->
+        <h2 class="hobby3-title">Food</h2>
+        <div class="hobby3ImgDiv"><img src="hobby3Img.jpg" alt="Image of pancakes" class="hobby3Img"></div>
+        <div class="hobby3-description"><button class="more-btn h3-btn">More</button>
+          <p class="hobby3-description-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab maxime nemo ullam consequuntur cumque numquam quod architecto beatae saepe? Ipsa obcaecati architecto beatae corrupti totam! Atque nobis exercitationem omnis et sit quis unde vitae? Distinctio commodi magnam, assumenda reiciendis eaque, sed error totam nam nemo quo, ipsam earum excepturi nihil obcaecati quas amet? Saepe odit dolores id quia asperiores adipisci laudantium porro rem inventore voluptatem voluptates pariatur iste aut incidunt debitis reprehenderit, totam perspiciatis ratione qui facilis repudiandae earum? Dolorum.</p>
+        </div>
+        <!-- Hobby 3 end -->
+
+          <!-- Hobby 4 start -->
+          <h2 class="hobby4-title">Cycling</h2>
+          <div class="hobby4ImgDiv"><img src="hobby4Img.jpg" alt="Image of a bicycle in a love hart" class="hobby4Img"></div>
+          <div class="hobby4-description"><button class="more-btn h4-btn">More</button>
+            <p class="hobby4-description-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab maxime nemo ullam consequuntur cumque numquam quod architecto beatae saepe? Ipsa obcaecati architecto beatae corrupti totam! Atque nobis exercitationem omnis et sit quis unde vitae? Distinctio commodi magnam, assumenda reiciendis eaque, sed error totam nam nemo quo, ipsam earum excepturi nihil obcaecati quas amet? Saepe odit dolores id quia asperiores adipisci laudantium porro rem inventore voluptatem voluptates pariatur iste aut incidunt debitis reprehenderit, totam perspiciatis ratione qui facilis repudiandae earum? Dolorum.</p>
+          </div>
+          <!-- Hobby 4 end -->
+      </div>
+      <!-----------------
+        Hobbies end  
+       -------------------->
+      </div>
+      <!---------------------
+        Main container end 
+      ---------------------->
   </body>
 </html>
